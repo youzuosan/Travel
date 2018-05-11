@@ -52,7 +52,9 @@ export default {
     width: 100%
     height: 0
     overflow: hidden
-    padding-bottom: 32%
+    padding-bottom: 26%
+    background: #eee
     .sliderImg
       width: 100%
+      height: 100%
 </style>
