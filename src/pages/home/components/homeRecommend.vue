@@ -2,15 +2,15 @@
   <div class="recomWrap">
     <div class="title"><span class="iconfont">&#xe62d;</span>猜你喜欢</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList"
+      <li class="item border-bottom" v-for="item of list"
         :key=item.id
       >
         <img class="item-img" :src=item.imgUrl />
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
-          <p class="item-inner">{{item.inner}}</p>
+          <p class="item-inner">{{item.desc}}</p>
           <p class="item-charge">
-            <span class="money">￥{{item.money}}</span>起
+            <span class="money">￥88</span>起
           </p>
         </div>
       </li>
@@ -20,34 +20,8 @@
 <script>
 export default{
   name: 'homeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: 1,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/c7/c74a66ec65491fc2a3.img.jpg_200x200_57fd010d.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩',
-        money: '88'
-      }, {
-        id: 2,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/c7/c74a66ec65491fc2a3.img.jpg_200x200_57fd010d.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩',
-        money: '88'
-      }, {
-        id: 3,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/c7/c74a66ec65491fc2a3.img.jpg_200x200_57fd010d.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩',
-        money: '88'
-      }, {
-        id: 4,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/c7/c74a66ec65491fc2a3.img.jpg_200x200_57fd010d.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩',
-        money: '88'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

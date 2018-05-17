@@ -2,7 +2,7 @@
   <div class="wrap">
     <div class="title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList"
+      <li class="item border-bottom" v-for="item of list"
         :key=item.id
       >
         <div class="imgWrap">
@@ -10,7 +10,7 @@
         </div>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
-          <p class="item-inner">{{item.inner}}</p>
+          <p class="item-inner">{{item.desc}}</p>
         </div>
       </li>
     </ul>
@@ -19,30 +19,8 @@
 <script>
 export default{
   name: 'homeWeekday',
-  data () {
-    return {
-      recommendList: [{
-        id: 1,
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/ef/815eec316c47c4.jpg_r_640x214_5bf7f999.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩'
-      }, {
-        id: 2,
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/87/b46b43303b585c.jpg_r_640x214_af2aa659.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩'
-      }, {
-        id: 3,
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/ef/815eec316c47c4.jpg_r_640x214_5bf7f999.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩'
-      }, {
-        id: 4,
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/87/b46b43303b585c.jpg_r_640x214_af2aa659.jpg',
-        title: '青岛东方影都万达乐园',
-        inner: '好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩好玩'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -60,7 +38,7 @@ export default{
       .imgWrap
         overflow: hidden
         height: 0
-        padding-bottom: 33.9%
+        padding-bottom: 37.09%
         .item-img
           padding: .1rem
           width: 100%
