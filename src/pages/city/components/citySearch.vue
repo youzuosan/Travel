@@ -1,6 +1,6 @@
 <template>
   <div class="citySearch">
-    <input class="search" type="search" placeholder="请输入城市/拼音" />
+    <input class="search" type="search" placeholder="请输入城市/拼音/简写啥的" />
   </div>
 </template>
 <script>
