@@ -12,6 +12,11 @@
     <li class="item">J</li>
     <li class="item">K</li>
     <li class="item">L</li>
+    <li class="item">M</li>
+    <li class="item">N</li>
+    <li class="item">O</li>
+    <li class="item">P</li>
+    <li class="item">Q</li>
   </ul>
 </template>
 <script>
