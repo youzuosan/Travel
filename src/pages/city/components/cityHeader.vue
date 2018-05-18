@@ -1,7 +1,9 @@
 <template>
   <div class="cityHeader">
     <span>选择地址</span>
-    <div class="iconfont return-sty">&#xe624;</div>
+    <router-link to="/">
+      <div class="iconfont return-sty">&#xe624;</div>
+    </router-link>
   </div>
 </template>
 <script>
@@ -27,4 +29,5 @@ export default{
       width: .8rem
       height: $headerHeight
       line-height: $headerHeight
+      color: #fff
 </style>
